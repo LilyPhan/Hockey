@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.a17phanli.hockeyscorez.MainActivity">
+
+
+    <GridLayout
+        android:id="@+id/League"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="start"
+        android:background="@color/purple"
+        android:columnCount="5"
+        android:rowCount="9">
+
+        <Spinner
+            android:id="@+id/Leagues_spinner"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_column="3"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="3"
+            android:entries="@array/Leagues_Array"
+            android:spinnerMode="dropdown"
+            android:textSize="50sp" />
+
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="324dp"
+            android:layout_height="100dp"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="0" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="3"
+            android:bna
+            android:text="@string/LEAGUE"
+            android:textColor="@color/darkred"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="4"
+            android:text="@string/TEAM"
+            android:textColor="@color/darkblue"
+            android:textSize="45sp" />
+
+        <Spinner
+            android:id="@+id/Teams_spinner"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spinner"
+            android:layout_column="3"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="4"
+            android:entries="@array/Leagues_Array"
+            android:spinnerMode="dropdown"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="5"
+            android:text="@string/TEAM2"
+            android:textColor="@color/darkblue"
+            android:textSize="45sp" />
+
+        <Spinner
+            android:id="@+id/Teams1_spinner"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spinner2"
+            android:layout_column="3"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="5"
+            android:entries="@array/Teams_Array"
+            android:spinnerMode="dropdown"
+            android:textSize="50sp" />
+
+    </GridLayout>
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/League"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="247dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginStart="91dp" />
+</RelativeLayout>
